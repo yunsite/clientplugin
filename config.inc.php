@@ -45,6 +45,6 @@ $db_config->accessTokenSecret	= ''; //访问令牌密钥
 $db_config->dianboomAccount= 'YOUR-NAME@YOUR-DOMAIN';//您的店谱帐号，一般为正常的邮箱帐号
 
 #Import attribute mapping（载入属性代号映射表）
-$db_config->mapping = require('mapping.php');
+$db_config->mapping = require_once('mapping.php');
 
 ?>
