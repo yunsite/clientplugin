@@ -11,6 +11,12 @@
 $db_config = new stdClass;
 $db_config->restURL   = 'http://api.dianboom.com';
 $db_config->img_key   = 'productImage';
+
+/*
+ *DIANBOOM_CLIENTAPI_PATH是clientAPI的绝对路径，一般是放在系统的根目录上，然后配置一个常量，例如：
+ *ROOT_PATH，后面跟上目录名称，当然也可以按你们系统的实际配置来修改。
+ */
+$db_config->DIANBOOM_CLIENTAPI_PATH = ROOT_PATH.'clientAPI/';
 $db_config->callMapping  = array(
    'addCategory'	=> 'store/addCategory', //添加商品分类
    'updateCategory'	=> 'store/updateCategory', //修改商品分类
@@ -32,6 +38,7 @@ $db_config->callMapping  = array(
    'getStoreListByBrandId'=>'store/getStoreListByBrandId', //获取某品牌旗下所有商店列表 
    'loadSameLevelBrandCategoriesData'=>'store/loadSameLevelBrandCategoriesData', //获取同级品牌分类
    'loadCategoryData'=>'store/loadCategoryData', //获取分类信息
+   'orderStatus'=>'store/orderStatus', //更改订单状态
 );
 
 #####################YOUR CONSUMER KEY & CONSUMER SECRET########################
