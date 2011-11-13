@@ -49,7 +49,7 @@ $db_config->accessToken			= ''; //访问令牌
 $db_config->accessTokenSecret	= ''; //访问令牌密钥
 
 #Your dianboom account
-$db_config->dianboomAccount= 'YOUR-NAME@YOUR-DOMAIN';//您的店谱帐号，一般为正常的邮箱帐号
+$db_config->dianboomAccount		= 'YOUR-NAME@YOUR-DOMAIN';//您的店谱帐号，一般为正常的邮箱帐号
 
 #Import attribute mapping（载入属性代号映射表）
 $db_config->mapping = require_once('mapping.php');
